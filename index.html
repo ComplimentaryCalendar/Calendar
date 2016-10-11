@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <style>
+      body {
+        background-color: #111;
+        color: white;
+        font-family: Helvetica, sans-serif;
+        font-size: 7vw;
+        min-height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      h1 {
+        padding: 5px;
+        position: relative;
+        color: #fff;
+        background: #000;
+        mix-blend-mode: lighten;
+      }
+      h1::before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+        mix-blend-mode: multiply;
+      }
+      p {
+        padding-top: 10px;
+        font-size: 0.3em;
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Complimentary Calendar</h1>
+    <p>(coming soon)</p>
+  </body>
+</html>
