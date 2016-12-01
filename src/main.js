@@ -28,7 +28,8 @@ let render = () => {
 // ========================================================
 if (__DEV__) {
   if (window.devToolsExtension) {
-    window.devToolsExtension.open()
+    /* I don't want the redux dev tool window to open on page load */
+    // window.devToolsExtension.open()
   }
 }
 
