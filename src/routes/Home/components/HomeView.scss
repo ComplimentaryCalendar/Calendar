@@ -1,5 +1,29 @@
-.duck {
-  display: block;
-  width: 120px;
-  margin: 1.5rem auto;
+main {
+  position: absolute;
+  z-index: 1;
+  min-height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main h1 {
+  padding: 10px;
+  position: relative;
+  color: #fff;
+  background: #000;
+  mix-blend-mode: lighten;
+}
+main h1::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+  mix-blend-mode: multiply;
+}
+main span {
+  padding-top: 10px;
+  font-size: 0.3em;
+  color: #aaa;
 }

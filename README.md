@@ -63,7 +63,11 @@ Here are all of the npm scripts available.
 To add a unit test, simply create a `.spec.js` file anywhere in `~/tests`. Karma will pick up on these files automatically, and Mocha and Chai will be available within your test without the need to import them. Coverage reports will be compiled to `~/coverage` by default. If you wish to change what reporters are used and where reports are compiled, you can do so by modifying `coverage_reporters` in `~/config/index.js`.
 
 ## Deployment
-(add this section when deployment is set up)
+This will run the linter, all tests, and then compile the application into the dist folder.
+```bash
+$ npm run deploy:prod
+```
+For now, copy the contents of the dist folder into the gh-pages branch and deploy that.
 
 ## Build System
 ### Configuration
